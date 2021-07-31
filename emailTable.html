@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+  table, th, td {
+  border: 0px solid black;
+  font-size:15px;
+}
+
+th, thead {
+  background-color: lightblue;
+}
+
+</style>  
+  </head>
+  <body>
+    <div>
+      <table>
+        <thead>
+          <th><?= day ?></th><th><?= date ?></th><th><?= mg ?></th><th><?= weight ?></th><th>
+        </thead>
+        <tbody >
+          <? tablerangeValue.forEach(r => {?>
+          <tr> 
+          <td><?= r[0] ?></td><td><?= r[1] ?></td><td><?= r[2] ?></td><td><?= r[3] ?></td><td style="text-align:center">
+          </tr>
+          <?})?>
+         
+        </tbody>
+
+      </table>
+    </div>
+  </body>
+</html>
