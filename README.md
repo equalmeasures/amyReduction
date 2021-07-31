@@ -1,7 +1,7 @@
 # amyReduction
 Time Table to reduce dependence on medication
 
-Request came from <a href="https://www.reddit.com/r/sheets/comments/ov28ms/is_there_some_magic_that_will_allow_me_to_share_a/">here</a> or reddit. 
+The idea came from <a href="https://www.reddit.com/r/sheets/comments/ov28ms/is_there_some_magic_that_will_allow_me_to_share_a/">here</a> or reddit. 
 Figured this would be a good exercise.
 
 Setup Steps:
