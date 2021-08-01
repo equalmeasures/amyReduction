@@ -46,12 +46,12 @@ function createTimeTable(){
         workingSheet.getRange(j,4).setValue(((workingSheet.getRange(j,3).getValue())*weightPerMg).toFixed(4));
       }
 
-      sendEmail(i+1);
+      sendEmail(i+1,data[i][1]);
     }
   }
 }
 
-function sendEmail(row) {
+function sendEmail(row,emailAddress) {
   
       const headers = workingSheet.getRange(1,1,1,4).getDisplayValues();
 
@@ -75,7 +75,7 @@ function sendEmail(row) {
       const htmlForEmail = htmlTemplate.evaluate().getContent();
 
       MailApp.sendEmail({
-        to:'equalmeasures99@gmail.com',
+        to:emailAddress,
         subject: 'Your Time Table',
         htmlBody: htmlForEmail
       });
